@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVibe – Movie Reviews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-animation"></div>
+
+    <header class="main-header">
+        <h1 class="fade-in-up">CineVibe <span class="header-icon">🎬</span></h1>
+        <div class="search-container fade-in-up">
+            <input type="text" id="search-input" placeholder="Search movies by title..." class="animated-input">
+            <button id="toggle-theme" class="animated-btn">
+                <span class="btn-icon"></span> Toggle Theme
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="movies-grid" class="grid"></div>
+    </main>
+
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
